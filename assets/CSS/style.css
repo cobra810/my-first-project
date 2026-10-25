@@ -1,0 +1,60 @@
+body {
+  background-color: rgb(255, 85, 0);
+  background-image: url(../images/pic1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  margin: 0;
+  min-height: 100vh;
+  /* Domyślnie ustawiamy nowoczesny font i białą barwę tekstu dla lepszej czytelności */
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+/* Dodajemy subtelny overlay (przygaszenie) na całe tło, aby tekst lepiej się wyróżniał */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Czarny półprzezroczysty filtr */
+  z-index: 1;
+  pointer-events: none; /* Kliknięcia przechodzą przez warstwę */
+}
+
+/* Styl dla logo */
+.logo {
+  width: 500px;
+  height: 300px; /* Poprawione: brakowało jednostki px */
+  position: absolute;
+  top: 20px; /* Trochę większy odstęp od góry dla oddechu */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2; /* Logo nad tłem */
+  filter: drop-shadow(
+    0 4px 10px rgba(0, 0, 0, 0.5)
+  ); /* Delikatny cień, żeby logo "płynęło" */
+}
+
+h1 {
+  /* Zamiast sztywnego koloru, używamy białego z lekkim cieniem */
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 2px; /* Rozstawienie liter nadaje profesjonalizmu */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  position: relative;
+}
+
+p {
+  /* Zmiana niebieskiego na jasnoszary/biały dla lepszej widoczności */
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem; /* Trochę większy tekst */
+  line-height: 1.6; /* Lepszy interliniaż */
+  z-index: 2;
+  position: relative;
+}
