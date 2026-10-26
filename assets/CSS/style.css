@@ -58,3 +58,7 @@ p {
   z-index: 2;
   position: relative;
 }
+/*to jest moja notak dla h2 - jako test*/
+h2 {
+  color: orangered;
+}
