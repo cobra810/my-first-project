@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(255, 85, 0);
+  background-color: #ff3333;
   background-image: url("../images/imagecosmos.jpg");
   background-size: cover;
   background-position: center;
@@ -84,6 +84,7 @@ h2 {
     box-shadow: 0 0 10px rgba(255, 51, 51, 0.4);
     cursor: pointer;
     margin-top: 15px;
+    margin-left: 100px;
 }
 
 .join-btn:hover {
@@ -91,4 +92,25 @@ h2 {
     border-color: #ff3333;
     color: #ff3333;
     box-shadow: 0 0 20px rgba(255, 51, 51, 0.8);
+}
+li.instruction-item {
+  display: block;                     /* Każdy punkt zaczyna się w nowej linii */
+    width: fit-content;                 /* Szerokość dopasowuje się tylko do długości tekstu */
+    padding: 12px 18px;                 
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: #ffffff;                     
+    margin-bottom: 10px;                
+    border-radius: 6px;                 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+p.bok {
+  color: #ff3333;
+  font-size: 1.2rem; /* Trochę większy tekst */
+  line-height: 1.6; /* Lepszy interliniaż */
+  z-index: 2;
+  position: relative;
+  margin-left: 120px;
+
+
 }
